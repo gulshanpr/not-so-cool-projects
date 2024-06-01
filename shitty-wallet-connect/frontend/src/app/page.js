@@ -9,6 +9,8 @@ export default function Home() {
   const [walletStatus, setWalletStatus] = useState("Connect your Metamask wallet");
   const [currentStatus, setCurrentStatus] = useState("");
 
+  console.log("");
+
   const connectButton = async () => {
     const walletResponse = await connectWallet();
     setWalletAddress(walletResponse.address);
